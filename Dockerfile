@@ -19,8 +19,8 @@ RUN python3 -m pip install jupyterlab \
 
 EXPOSE 8888/tcp
 ENV SHELL /bin/bash
-ENV PYVISTA_TRAME_SERVER_PROXY_PREFIX='/proxy/'
-ENV PYVISTA_TRAME_SERVER_PROXY_ENABLED="True"
+# ENV PYVISTA_TRAME_SERVER_PROXY_PREFIX='/proxy/'
+# ENV PYVISTA_TRAME_SERVER_PROXY_ENABLED="True"
 ENV PYVISTA_BUILDING_GALLERY=True
 ENV PYVISTA_OFF_SCREEN=True
 ENTRYPOINT ["jupyter", "lab", "--ip", "0.0.0.0", "--no-browser", "--allow-root"]
